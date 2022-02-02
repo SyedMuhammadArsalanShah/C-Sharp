@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture01OperatorsWithIf-Else", "Lecture01OperatorsWithIf-Else\Lecture01OperatorsWithIf-Else.csproj", "{22E6D7F7-8BEA-4D43-AA2C-D16A3FEFD562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22E6D7F7-8BEA-4D43-AA2C-D16A3FEFD562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E6D7F7-8BEA-4D43-AA2C-D16A3FEFD562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E6D7F7-8BEA-4D43-AA2C-D16A3FEFD562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E6D7F7-8BEA-4D43-AA2C-D16A3FEFD562}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9E34F39-56B2-43B3-8058-D8DA14B57D58}
+	EndGlobalSection
+EndGlobal
