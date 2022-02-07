@@ -9,57 +9,63 @@ namespace Lecture01ForLoop
     class Program
     {
         static void Main(string[] args)
-{            //for loop
-       //     //for(initialization ;condition; increment/decrement){}
-       //     int i, j;
-       //     //0to10 series
-       //     for (i = 0; i <= 10; i++)
-       //     {
-
-
-       //         Console.WriteLine("laiba" + i);
-
-       //     }
-
-       //     //0 to 100 print series with  even odd number
-       //     for (j = 0; j <= 100; j++)
-       //     {
-
-       //         if (j % 2 == 0)
-       //         {
-       //             Console.WriteLine("even" + j);
-       //         }
-         
-       //else
-       //         {
-       //             Console.WriteLine("odd" + j);
-
-       //         }
-
-
-
-       //     }
-
-            // factorial loop 
-            int fact = 1;
-            // 5*4*3*2*1=120
-            for (int i= 1; i <=5; i++)
+        {            //for loop
+            //for(initialization ;condition; increment/decrement){}
+            int i, j;
+            //0to10 series
+            Console.WriteLine("0to10 series");
+            for (i = 0; i <= 10; i++)
             {
-                fact*= i;  //fact=fact*i  =ist iteration= 1 ;2nd iteration 2;3rd= 6 4th= 24 ;5th 120 
+
+
+                Console.WriteLine(i);
+
+            }
+
+            //0 to 100 print series with  even odd number
+            Console.WriteLine("0 to 10 print series with  even odd number");
+            for (j = 0; j <= 10; j++)
+            {
+
+                if (j % 2 == 0)
+                {
+                    Console.WriteLine("even" + j);
+                }
+
+                else
+                {
+                    Console.WriteLine("odd" + j);
+
+                }
+
+
+
+            }
+
+            // factorial program
+            Console.WriteLine("factorial program");
+            int fact = 1;
+          
+            for (int k= 1; k <=5; k++)
+            {
+                fact *= k; //fact=fact*i 
+                // => fact variable value in 1st iteration= 1 ; 2nd iteration = 2; 3rd iteration= 6 ; 4th iteration= 24 ; 5th iteration= 120 ;
+                // 5*4*3*2*1=120
             }
             Console.WriteLine(fact);
 
-            int fact1 = 0;
+            Console.WriteLine("sum of all values program");
             //sum of ten numbers
-            //1+2+3+4+5+6+7+8+9+10
-            int value1 = Convert.ToInt32(Console.ReadLine());
-            int value2 = Convert.ToInt32(Console.ReadLine());
-            for (int i = value1; i <= value2; i++)
+            //1+2+3+4+5=15
+            int sum = 0;
+            for (int l = 0; l <= 5; l++)
             {
-                fact1 += i; //fact1 
+                sum += l;//sum =sum+ i;
+                // => sum variable value in 1st iteration = 1; 2nd iteration 3; 3rd iteration = 6; 4th iteration=10; 5th iteration=15
+                //1+2+3+4+5=15
             }
-            Console.WriteLine(fact1);  //fact=fact+i = ist iteration = 1; 2nd iteration 3; 3rd = 6 4th = 10; 5th 15
-            //
+            Console.WriteLine(sum);
+
 
 
             Console.ReadKey();
