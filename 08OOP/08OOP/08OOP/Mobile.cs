@@ -12,11 +12,20 @@ namespace _08OOP
         public string brand;
       
         public int price;
+
+
+
+
+
         // data type methodname(){}
+        public void methodone()
+        {
+            Console.WriteLine("best phone ");
 
 
-
-       public void methodone(string model , string brand, int price)
+        }
+        // data type methodname(parameters){}
+        public void methodtwo(string model , string brand, int price)
         {
             this.model = model;
             this.brand = brand;
