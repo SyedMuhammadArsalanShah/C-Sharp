@@ -25,38 +25,38 @@ namespace Signup
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string data = "Data Source=.;Initial Catalog=Signup2;Integrated Security=True";
-            SqlConnection sql = new SqlConnection(data);
+            string laiba = "Data Source=.;Initial Catalog=Signup3;Integrated Security=True";
+           SqlConnection connection=new SqlConnection(laiba);           
 
 
-            string name = textBox1.Text;
-            string email = textBox2.Text;
-            string pass = textBox3.Text;
-            string contact = textBox4.Text;
-            string address = textBox5.Text;
+            string name, email, pass, contact, address;
+            name =textBox1.Text;
+            email=textBox2.Text;
+            pass=textBox3.Text;
+            contact=textBox4.Text;
+            address=textBox5.Text;
 
-            if (name !=string.Empty|| email != string.Empty && pass != string.Empty|| contact != string.Empty|| address != string.Empty)
+            if (name != string.Empty || contact != string.Empty || address != string.Empty)
             {
-                
-                sql.Open();
-                SqlCommand command = new SqlCommand();
-                command.Connection = sql;
-                command.CommandType = CommandType.Text;
-                command.CommandText = "insert into info2 (Name, Email , Pass,  Contact , Address )" +
-                    " Values('" + name + "' ,'" + email + "','" + pass + "','" + contact + "','" + address + "')";
-
-                command.ExecuteNonQuery();
-
+                if (email != string.Empty && pass != string.Empty)
+                {
+                      connection.Open();
+                      SqlCommand  command = new SqlCommand();
+                      command.Connection = connection;
+                      command.CommandType = CommandType.Text;
+                      command.CommandText = "insert into info (Name, Email , Pass,  Contact , Address ) Values('" + name + "','" + email + "','" + pass + "','" + contact + "','" + address+ "')";
+                       command.ExecuteNonQuery();
 
 
-                MessageBox.Show("Account Successfully created");
+                    MessageBox.Show("Account Successfully created");}
+                else
+                {MessageBox.Show("Error"); }
             }
             else
-            {
-                MessageBox.Show("Error");
-            }
+            { MessageBox.Show("Error"); }
 
-            sql.Close();
+
+          connection.Close();
         }
     }
 }
