@@ -1,10 +1,10 @@
-create database Signup2
+create database Signup3
 
 
 -- for use database
-use Signup2 
+use Signup3 
 -- for create table 
-create table info2(
+create table info(
 -- identity auto increment primary key not null
 Id int identity(1,1) primary key not null,
 Name nvarchar(50),
@@ -14,7 +14,5 @@ Contact nvarchar(50),
 Address nvarchar(50)
 ) 
 
-
-
-insert into info2 (Name, Email , Pass,  Contact , Address ) Values('demo','demogmail.com', 123, 123456, '4/4' )
-select* from info2
+insert into info (Name, Email , Pass,  Contact , Address ) Values('demo','demogmail.com', 123, 123456, '4/4' )
+select* from info
