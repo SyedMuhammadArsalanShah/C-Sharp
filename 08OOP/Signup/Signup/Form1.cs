@@ -25,7 +25,7 @@ namespace Signup
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string laiba = "Data Source=.;Initial Catalog=Signup3;Integrated Security=True";
+            string laiba= "Data Source=.;Initial Catalog=Signup3;Integrated Security=True";
            SqlConnection connection=new SqlConnection(laiba);           
 
 
