@@ -8,9 +8,11 @@ namespace InheritanceOOP
 {
     class Car
     {
+
+
         public string name, modelno, platenumber;
 
-        public void runstop(string name, string modelno, string platenumber)
+        public virtual void runstop(string name, string modelno, string platenumber)
         {
 
             this.name = name;
@@ -23,9 +25,6 @@ namespace InheritanceOOP
 
         }
 
-
-
-
-
+     
     }
 }

@@ -4,22 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InheritanceOOP
+namespace PolymorphismOOP
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            //child class object 
             Brand brand = new Brand();
-             
-           brand.runstop("suzuki ","2022 ", " 123 ");
-
-
+            brand.runstop("civic", "2022", "xyz-789");
             Console.ReadKey();
-
-
 
 
 
